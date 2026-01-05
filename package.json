@@ -1,0 +1,23 @@
+{
+  "name": "feishu-upload-img-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ncc-out/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o ncc-out --license LICENSE",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^2.0.1",
+    "@actions/github": "^6.0.1",
+    "@larksuiteoapi/node-sdk": "^1.56.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@vercel/ncc": "^0.38.4",
+    "typescript": "^5.9.3"
+  }
+}
